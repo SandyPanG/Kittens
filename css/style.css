@@ -5,18 +5,46 @@
 
 /* Mobile first */
 
-body {
-  /*background-color: black;*/
-  background-image: url(..assets/images/kitten-medium.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-}
-
 .flex-container {
-  align-items: center;
-  display: flex;
+  /*align-items: center;*/
+  background-image: url("..assets/images/dawn.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*display: flex;*/
   height: 100%;
   justify-content: space-around;
+  width: 100%;
+}
+
+.kitten {
+    height: 200px;
+    width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("../assets/images/kitten-large.png");
+}
+
+/* Pantalla mediana */
+
+@media (min-width: 992px) {
+  .flex-container {
+  background-image: url("../assets/images/night.png");
+  }
+  .kitten {
+  content: url("../assets/images/kitten-small.png");
+  }
+}
+
+/* Pantalla grande */
+
+
+@media (min-width: 1200px) {
+  .flex-container {
+    background-image: url("../assets/images/sunny-day.png");
+  }
+  .kitten {
+    content: url("../assets/images/kitten-medium.png");
+  }
 }
