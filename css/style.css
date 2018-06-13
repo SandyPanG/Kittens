@@ -2,3 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+/* Mobile first */
+
+body {
+  /*background-color: black;*/
+  background-image: url(..assets/images/kitten-medium.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.flex-container {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+}
