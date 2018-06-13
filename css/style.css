@@ -5,43 +5,41 @@ body {
 /* Section */
 
 .kitten {
-  background-image: url("..assets/images/sunny-day.jpg");
+  background-image: url("../assets/images/night.jpg");
   width: 100%;
   text-align: center;
 }
 
-/* img de col-12 */
-
-img {
+.change {
+  width: 20em;
   margin-top: 50%;
-  width: 30em;
 }
 
 /* Pantalla mediana */
 
-@media (min-width: 950px) and (max-width: 1100px) {
+@media (min-width: 425px) {
   .kitten {
-    background-image: url("..assets/images/dawn.png");
+    background-image: url("../assets/images/sunny-day.jpg");
     background-size: cover;
     width: 100%;
   }
-  .col-12 {
-    content: url("..assets/images/kitten-large.png");
+  .change {
+    content: url("../assets/images/kitten-medium.png");
     width: 30em;
-    margin-top: 50%;
-    margin-left: 20%;
+    margin-top: 30%;
+    margin-left: 7%;
   }
 }
 
-/* Pantalla chica */
+/* Pantalla grande */
 
 
-@media (min-width: 400px) and (max-width: 949px) {
+@media (min-width: 992px) {
   .kitten {
-    background-image: url("..assets/images/night.jpg");
+    background-image: url("../assets/images/dawn.png");
   }
-  .col-12 {
-    content: url("..assets/images/kitten-small.png");
+  .change {
+    content: url("../assets/images/kitten-large.png");
     width: 25em;
     margin-left: 10%;
   }
